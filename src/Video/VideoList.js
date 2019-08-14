@@ -7,7 +7,7 @@ class VideoList extends React.Component {
       this.props.video.map((video)=>{        
         return <VideoItem key = {video.id.channelId} v={video}/>    
       });
-    return <div> {renderList}</div>
+    return <div class="ui relaxed divided list">{renderList}</div>
   }
 }
 

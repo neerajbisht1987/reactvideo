@@ -4,7 +4,8 @@ class VideoItem extends React.Component {
   render() {
     return (
       <div >
-        Video Item
+        <img src={this.props.v.snippet.thumbnails.medium.url}></img>
+        {this.props.v.snippet.title}
     </div>
     );
   }

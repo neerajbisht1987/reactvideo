@@ -11,4 +11,4 @@ class VideoList extends React.Component {
   }
 }
 
-export default VideoItem;
+export default VideoList;

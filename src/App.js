@@ -26,7 +26,7 @@ class App extends React.Component {
         <SearchBar searchTextHandler={this.HandleSearchText} />
         I have {this.state.videos.length} videos.
         <VideoDetail />
-        <VideoList />
+        <VideoList video={this.state.videos} />
       </div>
     );
   }

@@ -3,11 +3,11 @@ import VideoItem from './VideoItem'
 
 class VideoList extends React.Component {
   render() {
-    return (
-      <div >
-        <VideoItem/>
-    </div>
-    );
+    const renderList =     
+      this.props.video.map((video)=>{        
+        return <VideoItem key = {video.id.channelId}v={video}/>    
+      });
+    return <div> {renderList}</div>
   }
 }
 
